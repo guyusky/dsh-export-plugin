@@ -1,0 +1,6 @@
+# dsh-my-export-plugin bundle layer · 会话导出 Markdown
+# 纯运行期插件 (无静态配置), 仅声明插件 id 与包名。
+# 后续层级若以相同 id 覆盖, 会整体替换本行, 请按需重述全部键。
+- insert:
+    - id: dsh-my-export-plugin
+      name: dsh-my-export-plugin

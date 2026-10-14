@@ -1,0 +1,55 @@
+{
+  "name": "dsh-my-export-plugin",
+  "version": "0.2.0",
+  "description": "会话导出 Markdown + PDF for DeepSeek Harness Web GUI —— 在 dsh 会话\"更多\"菜单的\"归档会话\"下方注入\"导出 Markdown\"/\"导出 PDF\"。Markdown 导完整会话日志;PDF 只导用户输入 + 助手可见回复(文字与图片, 不含思考过程/工具调用/系统提示), 用隐藏 iframe + window.print() 另存为 PDF。复用官方 /api/session.export ZIP route, 纯前端注入, 零 npm 依赖, 不碰 persistence。",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "export",
+    "markdown",
+    "pdf",
+    "print",
+    "session-log"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "inject.mjs",
+    "cordis.patch.yml",
+    "README.md",
+    "test-inject.mjs",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test-inject.mjs",
+    "prepack": "node test-inject.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_GITHUB_USERNAME/dsh-export-plugin.git"
+  },
+  "homepage": "https://github.com/YOUR_GITHUB_USERNAME/dsh-export-plugin#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-host-webserver": ">=0.1.0-rc.6"
+  },
+  "license": "MIT"
+}
