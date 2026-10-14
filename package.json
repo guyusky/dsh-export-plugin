@@ -36,9 +36,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_GITHUB_USERNAME/dsh-export-plugin.git"
+    "url": "git+https://github.com/guyusky/dsh-export-plugin.git"
   },
-  "homepage": "https://github.com/YOUR_GITHUB_USERNAME/dsh-export-plugin#readme",
+  "homepage": "https://github.com/guyusky/dsh-export-plugin#readme",
   "publishConfig": {
     "access": "public"
   },
