@@ -1,11 +1,11 @@
-// dsh-my-export-plugin v0.2.0 · 会话导出 Markdown + PDF for DeepSeek Harness Web GUI
+// dsh-export-plugin v0.2.0 · 会话导出 Markdown + PDF for DeepSeek Harness Web GUI
 // 独立插件: 在会话行"更多"菜单的"归档会话"下方注入"导出 Markdown" / "导出 PDF" 两项,
 // 复用官方 /api/session.export ZIP route, 前端解压 + 按 V4 event type 转 Markdown 下载,
 // 或渲染打印专用 HTML 到隐藏 iframe 调 window.print 另存为 PDF。
 // 纯前端注入 (无后端 endpoint), 零 npm 依赖, 不读 zstd, 不碰 persistence。
 import { exportInjectHtml } from './inject.mjs'
 
-export const name = 'dsh-my-export-plugin'
+export const name = 'dsh-export-plugin'
 
 /**
  * 把导出项的 HTML + CSS + JS 注入到 index.html 的 `</head>` 之前。
@@ -34,7 +34,7 @@ export function apply(ctx) {
           try { disposeTap() } catch {}
         }
       },
-      'dsh-my-export-plugin: 注入会话导出 Markdown / PDF 菜单项'
+      'dsh-export-plugin: 注入会话导出 Markdown / PDF 菜单项'
     )
   })
 }

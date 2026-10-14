@@ -1,5 +1,5 @@
 {
-  "name": "dsh-my-export-plugin",
+  "name": "dsh-export-plugin",
   "version": "0.2.0",
   "description": "会话导出 Markdown + PDF for DeepSeek Harness Web GUI —— 在 dsh 会话\"更多\"菜单的\"归档会话\"下方注入\"导出 Markdown\"/\"导出 PDF\"。Markdown 导完整会话日志;PDF 只导用户输入 + 助手可见回复(文字与图片, 不含思考过程/工具调用/系统提示), 用隐藏 iframe + window.print() 另存为 PDF。复用官方 /api/session.export ZIP route, 纯前端注入, 零 npm 依赖, 不碰 persistence。",
   "keywords": [

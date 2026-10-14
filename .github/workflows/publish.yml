@@ -1,7 +1,7 @@
 # 推 tag v* 时自动: 自测 → 发 npm → 建 GitHub Release
 # 首次使用需在仓库 Settings → Secrets and variables → Actions 添加 NPM_TOKEN:
 #   在 https://www.npmjs.com/settings/<你的账号>/tokens 创建 granular access token,
-#   勾选对 dsh-my-export-plugin 的 publish 权限, 然后把它作为 NPM_TOKEN secret 存入仓库。
+#   勾选对 dsh-export-plugin 的 publish 权限, 然后把它作为 NPM_TOKEN secret 存入仓库。
 name: publish
 
 on:

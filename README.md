@@ -1,4 +1,4 @@
-# dsh-my-export-plugin · 会话导出 Markdown + PDF
+# dsh-export-plugin · 会话导出 Markdown + PDF
 
 在 dsh 会话行"更多"菜单里,于"归档会话"下方注入两项:
 
@@ -96,7 +96,7 @@ Markdown 与 PDF **共用同一套"极简问答对"**（同一份 `jsonlToBlocks
 npx @deepseek-ai/dsh plugin --profile web add D:\dsh-code\export-plugin
 ```
 
-插件以**目录链接**安装(profile 的 `dsh-my-export-plugin` → `link:D:/dsh-code/export-plugin`),改 `inject.mjs` / `index.js` 后**只需重启 dsh**(`npx @deepseek-ai/dsh web`),不必重新 add;改 `package.json` 结构字段需重新 add。
+插件以**目录链接**安装(profile 的 `dsh-export-plugin` → `link:D:/dsh-code/export-plugin`),改 `inject.mjs` / `index.js` 后**只需重启 dsh**(`npx @deepseek-ai/dsh web`),不必重新 add;改 `package.json` 结构字段需重新 add。
 
 > `inject.mjs` 的注入串在服务启动时随模块加载定格,重启前改动不会生效。
 
