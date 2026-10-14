@@ -1,0 +1,4 @@
+# 统一 LF 换行, 避免 Windows 下 checkout 变 CRLF 影响 inject.mjs 注入串的字节级内容
+* text=auto eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
